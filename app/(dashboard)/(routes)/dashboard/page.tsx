@@ -38,13 +38,6 @@ const tools = [
     color: "text-green-700",
     bgColor: "bg-green-700/10",
     href: "/code"
-  },
-  {
-    label: "Conversation",
-    icon: MessageSquare,
-    color: "text-violet-500",
-    bgColor: "bg-violet-500/10",
-    href: "/conversation"
   }
 ]
 

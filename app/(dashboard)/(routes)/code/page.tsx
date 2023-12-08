@@ -5,7 +5,7 @@ import { useState } from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
-import ChatCompletionRequestMessage from "openai"
+import { ChatCompletionRequestMessage } from "openai"
 import { Code } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -41,11 +41,11 @@ const CodePage = () => {
     const isLoading = form.formState.isSubmitting;
     const onSubmit = async (values: z.infer<typeof formSchema>) => {
         try {
-            // const userMessage: ChatCompletionRequestMessage = {
-            //     role: "user",
-            //     content: values.prompt
-            // }
-            const userMessage: ChatCompletionRequestMessage = { role: "user", content: values.prompt };
+            const userMessage: ChatCompletionRequestMessage = {
+                role: "user",
+                content: values.prompt
+            }
+            //const userMessage: ChatCompletionRequestMessage = { role: "user", content: values.prompt };
             // const userMessage = {
             //     role: "user",
             //     content: values.prompt,

@@ -3,6 +3,7 @@
 import * as z from "zod";
 import { useState } from "react";
 import axios from "axios";
+import toast from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import ChatCompletionRequestMessage from "openai"
 import { MessageSquare } from "lucide-react";
@@ -21,6 +22,7 @@ import { Loader } from "@/components/loader";
 import { UserAvatar } from "@/components/user-avatar";
 import { BotAvatar } from "@/components/bot-avatar";
 import { useProModal } from "@/hooks/use-pro-modal";
+
 
 
 
@@ -54,6 +56,8 @@ const ConversationPage = () => {
         } catch (error: any) {
             if (error?.response?.status === 403) {
                 proModal.onOpen();
+            } else {
+                toast.error("Something went wrong");
             }
         } finally {
             router.refresh();

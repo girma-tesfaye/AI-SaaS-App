@@ -7,7 +7,7 @@ import { ToastProvider } from '@/components/toaster-provider'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Thinker',
+  title: 'ThinkerAI',
   description: 'AI SaaS App',
 }
 

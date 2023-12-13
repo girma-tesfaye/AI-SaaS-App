@@ -44,7 +44,7 @@ export async function GET() {
                     price_data: {
                         currency: "USD",
                         product_data: {
-                            name: "Thinker Pro",
+                            name: "ThinkerAI Pro",
                             description: "Unlimited AI Generations",
                         },
                         unit_amount: 2000,

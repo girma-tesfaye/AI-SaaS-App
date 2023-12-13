@@ -74,7 +74,7 @@ const SideBar = ({ apiLimitCount = 0, isPro = false }: SidebarProps) => {
                     <div className="relative w-8 h-8 mr-4">
                         <Image fill alt="Logo" src="/logo.JPEG"/>
                     </div>
-                    <h1 className={cn("text-2xl font-bold", montserrat.className)}>ThinkerAI</h1>
+                    <h1 className={cn("text-2xl font-bold my-text-color", montserrat.className)}>ThinkerAI</h1>
                 </Link>
                 <div className="space-y-1">
                     {routes.map((route) => (

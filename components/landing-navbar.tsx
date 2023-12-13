@@ -23,7 +23,7 @@ export const LandingNavbar = () => {
                 <div className="relative h-8 w-8 mr-4">
                     <Image fill alt="Logo" src="/logo.JPEG"/>
                 </div>
-                <h1 className={cn("text-2xl font-bold text-white", font.className)}>
+                <h1 className={cn("text-2xl font-bold text-white my-text-color", font.className)}>
                     ThinkerAI
                 </h1>
             </Link>

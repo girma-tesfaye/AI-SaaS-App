@@ -2,13 +2,13 @@
 import axios from "axios";
 import { useState } from "react";
 import {
-    Check,
-    Code,
-    ImageIcon,
-    MessageSquare,
-    Music, 
-    VideoIcon, 
-    Zap
+    CodeIcon,
+    GalleryVerticalIcon,
+    MessageCircleIcon,
+    FileAudioIcon, 
+    PlaySquareIcon, 
+    Zap,
+    CheckCircle
 } from "lucide-react";
 
 import { 
@@ -28,39 +28,38 @@ import toast from "react-hot-toast";
 
 
 
-  const tools = [
+const tools = [
     {
       label: "Conversation",
-      icon: MessageSquare,
+      icon: MessageCircleIcon,
       color: "text-violet-500",
       bgColor: "bg-violet-500/10",
     },
     {
-        label: "Video Generation",
-        icon: VideoIcon,
-        color: "text-orange-700",
-        bgColor: "bg-green-700/10"
-    },
-    {
       label: "Music Generation",
-      icon: Music,
+      icon: FileAudioIcon,
       color: "text-emerald-500",
       bgColor: "bg-emerald-500/10",
     },
     {
+        label: "Video Generation",
+        icon: PlaySquareIcon,
+        color: "text-orange-700",
+        bgColor: "bg-green-700/10",
+    },
+    {
       label: "Image Generation",
-      icon: ImageIcon,
+      icon: GalleryVerticalIcon,
       color: "text-pink-700",
       bgColor: "bg-pink-700/10",
     },
     {
       label: "Code Generation",
-      icon: Code,
+      icon: CodeIcon,
       color: "text-green-700",
       bgColor: "bg-green-700/10",
     }
   ]
-
 export const ProModal = () => {
     const proModal = useProModal();
     const [loading, setLoading] = useState(false);
@@ -100,7 +99,7 @@ export const ProModal = () => {
                                         {tool.label}
                                     </div>
                                 </div>
-                                <Check className="text-primary w-5 h-5"/>
+                                <CheckCircle className="text-primary w-5 h-5"/>
                             </Card>
                         ))}
                     </DialogDescription>

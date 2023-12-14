@@ -1,12 +1,14 @@
 "use client"
 
 import {
-  ArrowRight,
-  Code,
-  Image,
-  MessageSquare,
-  Music, 
-  VideoIcon
+  ArrowBigRightDashIcon,
+  CodeIcon,
+  FileAudioIcon,
+  GalleryVerticalIcon,
+  LayoutDashboardIcon,
+  MessageCircleIcon,
+  PlaySquareIcon,
+  Settings,
 } from "lucide-react";
 
 import { useRouter } from "next/navigation";
@@ -16,35 +18,35 @@ import { cn } from "@/lib/utils";
 const tools = [
   {
     label: "Conversation",
-    icon: MessageSquare,
+    icon: MessageCircleIcon,
     color: "text-violet-500",
     bgColor: "bg-violet-500/10",
     href: "/conversation"
   },
   {
     label: "Music Generation",
-    icon: Music,
+    icon: FileAudioIcon,
     color: "text-emerald-500",
     bgColor: "bg-emerald-500/10",
     href: "/music"
   },
   {
       label: "Video Generation",
-      icon: VideoIcon,
+      icon: PlaySquareIcon,
       color: "text-orange-700",
       bgColor: "bg-green-700/10",
       href: "/video"
   },
   {
     label: "Image Generation",
-    icon: Image,
+    icon: GalleryVerticalIcon,
     color: "text-pink-700",
     bgColor: "bg-pink-700/10",
     href: "/image"
   },
   {
     label: "Code Generation",
-    icon: Code,
+    icon: CodeIcon,
     color: "text-green-700",
     bgColor: "bg-green-700/10",
     href: "/code"
@@ -75,7 +77,7 @@ const DashboardPage = () => {
                     {tool.label}
                   </div>
                 </div>
-                <ArrowRight className="w-5 h-5"/>
+                <ArrowBigRightDashIcon className="w-5 h-5"/>
               </Card>
             ))}
           </div>

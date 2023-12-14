@@ -12,7 +12,7 @@ export const LandingHero = () => {
         <div className="text-white font-bold py-36 text-center space-y-5">
             <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl space-y-5 font-extrabold my-text-color">
                 <h1>Explore the AI&apos;s power</h1>
-                <div className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 my-text-color">
+                <div className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-red-600 my-text-color">
                     <TypewriterComponent 
                         options={{
                             strings: [
@@ -38,7 +38,7 @@ export const LandingHero = () => {
                     </Button>
                 </Link>
             </div>
-            <div className="text-black text-xs md:text-sm font-normal my-text-color">
+            <div className="text-white text-xs md:text-sm font-normal my-text-color">
                 No credit card required
             </div>
         </div>

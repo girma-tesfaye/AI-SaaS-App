@@ -10,9 +10,9 @@ const testimonials = [
     description: "Any sufficiently advanced technology is indistinguishable from magic.",
   },
   {
-    name: "Antonio",
-    avatar: "A",
-    title: "Designer",
+    name: "Mintesnot Yismaw",
+    avatar: "M",
+    title: "Sr. Full Stack developer",
     description: "I became interested in long-term trends because an invention has to make sense in the world in which it is finished, not the world in which it is started.",
   },
   {
